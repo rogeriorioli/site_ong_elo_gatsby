@@ -1,0 +1,14 @@
+import styled from 'styled-components';
+
+export const CardsWrapper = styled.div`
+    padding : 40px 0;
+`
+
+export const CardContainer = styled.div`
+    width : 23%;
+    border : 1px solid #ccc ;
+    border-radius : 4px;
+    padding : 10px;
+    display : inline-block;
+    margin : 1%;
+`;

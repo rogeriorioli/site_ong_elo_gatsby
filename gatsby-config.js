@@ -13,8 +13,53 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`membros`,
+        path: `${__dirname}/src/images/members`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`parceiros`,
+        path: `${__dirname}/src/images/parceiros`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`camisetas`,
+        path: `${__dirname}/src/images/camisetas`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`slidehome`,
+        path: `${__dirname}/src/images/slidehome`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`slideactions`,
+        path: `${__dirname}/src/images/slideactions`
+      },
+    },
+      {
+        resolve: `gatsby-plugin-google-fonts`,
+        options: {
+          fonts: [
+            `Quicksand\:400,500,700` 
+          ],
+          display: 'swap'
+        }
+      },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -24,7 +69,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

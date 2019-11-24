@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import Header from "./Header/index"
+import GlobalStyles from '../global'
+import {FaInstagram, FaFacebookSquare, FaLinkedin}  from 'react-icons/fa'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,22 +25,31 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles/>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
+        {children}
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <div className="container">
+              <div className="col">
+                © {new Date().getFullYear()}, Elo
+                {` `} desenvolvido por: 
+                <a href="https://www.designhope.com.br"> designhope</a>
+              </div>
+              <div className="col">
+                  <ul>
+                    <li>
+                      <a href=""><FaInstagram size={24} color="#fff"/> </a>
+                    </li>
+                    <li>
+                      <a href=""><FaFacebookSquare size={24} color="#fff"/> </a>
+                    </li>
+                    <li>
+                      <a href=""><FaLinkedin size={24} color="#fff"/> </a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
         </footer>
-      </div>
     </>
   )
 }
