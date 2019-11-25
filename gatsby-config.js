@@ -44,6 +44,27 @@ module.exports = {
     {
       resolve:`gatsby-source-filesystem`,
       options:{
+        name:`acaopascoa`,
+        path: `${__dirname}/src/images/pascoa`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`acaoinverno`,
+        path: `${__dirname}/src/images/inverno`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
+        name:`acaocriancas`,
+        path: `${__dirname}/src/images/diadascriancas`
+      },
+    },
+    {
+      resolve:`gatsby-source-filesystem`,
+      options:{
         name:`slideactions`,
         path: `${__dirname}/src/images/slideactions`
       },

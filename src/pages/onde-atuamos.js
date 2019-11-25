@@ -2,11 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SectionNewsletter from "../components/SectionNewsletter"
-import TitlePage from "../components/TitlePage/Iindex"
-import CardMember from "../components/CardMember"
+import TitlePage from "../components/TitlePage/"
+
+import SectionPascoa from '../components/SectionPascoa'
+import SectionInverno from '../components/SectionInverno'
 import Title from "../components/Title/"
-import SectionParceiros from "../components/SectionParceiros"
+import SectionCriancas from "../components/SectionCriancas"
 const OndeAtuamosPage = () => (
   
   <Layout>
@@ -23,6 +24,18 @@ const OndeAtuamosPage = () => (
         Os detalhes fazem toda a diferença nesse caminho de transformações e evolução. Por isso a ELO realiza ações pontuais onde nossos voluntários e parceiros entregam um pouco de si e recebem muito, afinal, acreditamos que a gratidão de quem recebe um benefício é infinitamente menor que o prazer daquele de quem o faz.
         </p>
         </article>
+        <>
+          <Title title="Ação de Páscoa"/>
+          <SectionPascoa/>
+        </>  
+        <>
+          <Title title="Ação de Inverno"/>
+          <SectionInverno/>
+        </>  
+        <>
+          <Title title="Ação dia das crianças"/>
+          <SectionCriancas/>
+        </>  
       </div>
     </main>
   </Layout>
