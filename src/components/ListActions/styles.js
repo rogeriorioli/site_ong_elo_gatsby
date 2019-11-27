@@ -11,6 +11,9 @@ export const ListAction = styled.ul`
         margin : 10px 20px;
         background : #fff;
         line-height : 2;
+        @media screen and (max-width : 768px) {
+            margin: 20px 0;
+        }
         h3 {
             color : #871955;
             font-size : 25px;

@@ -1,9 +1,16 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useState} from "react"
 import Image from './image'
 import * as S from './styles'
+import {MdMenu , MdClose} from 'react-icons/md'
 
-const Header = () => { 
+
+function Header(props) { 
+  const [open , setOpen] = useState(false);
+
+function handleOpen() {
+  setOpen(!open !== false ? true : false)
+}
 
   const menu = [
     {
@@ -19,8 +26,8 @@ const Header = () => {
     link : '/onde-atuamos'
    },
    {
-    label : 'Noticias',
-    link : '/noticias'
+    label : 'Doações',
+    link : '/doacoes'
    },
    {
     label : 'Contato',
@@ -35,7 +42,10 @@ return (
           <Image/>
         </S.Logo>
         <S.MenuWrapper>
-          <nav>
+          <button onClick={handleOpen}>
+            {open !== true ? <MdMenu  size={36} color="#871955"/> : <MdClose size={36} color="#871955"/> }
+          </button>
+            <nav className={open !== true ? 'close' : 'open'}>
             <ul>
               {menu.map(list => (<li key={list.label}> <Link to={list.link}>{list.label}</Link></li>))}
             </ul>

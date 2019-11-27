@@ -27,7 +27,7 @@ export const settings = {
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 400) {
+                fluid(maxWidth: 800, maxHeight : 800) {
                   ...GatsbyImageSharpFluid
                 }
               }

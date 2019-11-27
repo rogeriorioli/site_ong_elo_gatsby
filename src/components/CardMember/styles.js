@@ -11,6 +11,10 @@ export const CardContainer = styled.div`
     padding : 10px;
     display : inline-block;
     margin : 1%;
+    @media screen and (max-width: 780px){ 
+        width : 99%;
+    }
+
     .gatsby-image-wrapper{
         height : 295px;
         img{

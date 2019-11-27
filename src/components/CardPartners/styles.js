@@ -11,4 +11,7 @@ export const CardContainer = styled.div`
     padding : 10px;
     display : inline-block;
     margin : 1%;
+    @media screen and (max-width : 768px){
+        width : 48%;
+    }
 `;

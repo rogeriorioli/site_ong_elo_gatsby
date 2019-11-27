@@ -18,5 +18,8 @@ export const Container = styled.section`
         margin : 1%;
         display : inline-block;
         vertical-align : top;
+        @media screen and (max-width : 768px){
+            width : 99%;
+        }
     }
   `

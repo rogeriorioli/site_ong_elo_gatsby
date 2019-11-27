@@ -27,13 +27,13 @@ const GlobalStyles = createGlobalStyle`
     border: 0;
     font-size: 100%;
     font: inherit;
+
+
+    
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
-  article, aside, details, figcaption, figure,
-  footer, header, hgroup, menu, nav, section {
-    display: block;
-  }
+
   body {
     line-height: 1;
   }
@@ -68,6 +68,7 @@ const GlobalStyles = createGlobalStyle`
   .container {
     max-width : 1140px;
     margin: auto;
+    padding : 0 15px;
   }
   footer {
     padding : 40px;
@@ -95,19 +96,50 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   article {
-    padding : 20px 0;
+    padding : 20px 40px;
     p{
       font-size : 18px;
       line-height : 1.5;
          color : #666;
     }
     h2 {
-        margin-top : 30px;
+        margin : 30px 0; 
         color: #871955;
         display: block;
         font-size: 36px;
         font-weight: 700;
+
+    }
+    b{
+      color : #666;
+      display : block ;
+      margin : 20px 0 0 ;
+      font-weight : 500;
+      font-size : 30px;
+     }
+    }
+  .pButton { 
+    margin-top : 30px;
+    @media screen and (max-width : 768px) {
+    display: inline-block;
+    }
+    form {
+      width : 125px;
+      height  : 50px;
     }
   }
+  .store { 
+    display : flow-root;
+    padding:  0 20px important; 
+    .col {
+      display : inline-block;
+      width : 47%;
+      margin : 1%;
+      vertical-align : top ;
+      @media screen and (max-width : 768px) {
+        width : 99%;
+      }
+    }
+    }
 `
 export default GlobalStyles
