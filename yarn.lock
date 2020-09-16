@@ -9865,10 +9865,10 @@ react-mailchimp-form@^1.0.2:
   dependencies:
     jsonp "^0.2.1"
 
-react-paypal-button-v2@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-paypal-button-v2/-/react-paypal-button-v2-2.6.0.tgz#4b0eef9da8adc3258fed63ad0fc946cbb70859ac"
-  integrity sha512-0yqUqNeZ+HMS2xxxrxctxf+DoPWZaK3tcBG4mr76KZ4sXKktFXbEmVA23qxLMPPfqNbyd47GT5jHY5kVq7fDRA==
+react-paypal-button-v2@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/react-paypal-button-v2/-/react-paypal-button-v2-2.6.2.tgz#6827b3d16609a44c7a41a69cda223b2da96beaed"
+  integrity sha512-+IgmfbKRdlfopX8YHfPcCrbuQnaA4mCRPQV3VbFXVHDOEiEHvROJ8arQc/JTa1ppRc95u/SweKeVRK1c65JWqA==
   dependencies:
     prop-types "^15.7.2"
     rimraf "^3.0.0"
